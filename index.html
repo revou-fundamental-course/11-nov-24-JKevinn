@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TravelokaIndah - Your Travel Companion</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <header class="main-header">
+        <div class="main-logo"></div>
+        <nav class="main-nav">
+            <a class="navbar" href="#">Home</a>
+            <a class="navbar" href="#">Our Packages</a>
+            <a class="navbar" href="#">Contact Us</a>
+        </nav>
+    </header>
+    <hr>
+    <main>
+        <header class="main-article-header">
+            <h1>Welcome to TravelokaIndah</h1>
+            <h3>Creating unforgettable travel experiences for you</h3>
+        </header>
+
+        <article class="main-article">
+            <div class="content-wrapper">
+                <section class="section-banner">
+                    <div class="banner-autoslide">
+                        <div class="slide">
+                            <img src="https://picsum.photos/seed/picsum1/800/400" alt="Travel Image 1" />
+                        </div>
+                        <div class="slide">
+                            <img src="https://picsum.photos/seed/picsum2/800/400" alt="Travel Image 2" />
+                        </div>
+                        <div class="slide">
+                            <img src="https://picsum.photos/seed/picsum3/800/400" alt="Travel Image 3" />
+                        </div>
+                    </div>
+                    <blockquote>"TravelokaIndah membuat perjalanan saya menjadi lebih berkesan dan tanpa khawatir."</blockquote>
+                    <p>Florence Hughes<br><small>Ibu Rumah Tangga, 28</small></p>
+                </section>
+                
+                <section class="section-contact-us">
+                    <h2>Contact Us</h2>
+                    <p>Tim kami akan menghubungi Anda dalam waktu 1x24 jam setelah data diterima. Kami siap membantu Anda merancang liburan impian.</p>
+                    <form onsubmit="validateForm(event)">
+                        <label for="name">Nama Anda:</label>
+                        <input type="text" placeholder="Nama Lengkap Anda" name="name" id="name">
+                        <span class="error-message" id="name-error"></span>
+                    
+                        <label for="email">Alamat Email:</label>
+                        <input type="email" placeholder="contoh@email.com" name="email" id="email">
+                        <span class="error-message" id="email-error"></span>
+                    
+                        <label for="interest">Minat Anda:</label>
+                        <select name="interest" id="interest">
+                            <option value="">Pilih salah satu</option>
+                            <option value="tour">Paket Wisata</option>
+                            <option value="custom">Perencanaan Perjalanan Khusus</option>
+                        </select>
+                        <span class="error-message" id="interest-error"></span>
+                    
+                        <button type="submit">Kirim</button>
+                    </form>
+                    
+                </section>
+            </div>
+        </article>
+        
+        <section class="features-and-benefits">
+            <header>
+                <h2>Kenapa Memilih TravelokaIndah?</h2>
+                <p>Kami menyediakan pengalaman perjalanan yang unik dengan fitur-fitur terbaik yang dirancang khusus untuk Anda.</p>
+            </header>
+            <div class="benefits-grid">
+                <div class="benefit-item">
+                    <div class="icon">🛫</div>
+                    <h3>1. Rencana Perjalanan yang Disesuaikan</h3>
+                    <p>Nikmati fleksibilitas penuh dalam mengatur perjalanan Anda sesuai preferensi dan kebutuhan Anda.</p>
+                </div>
+                <div class="benefit-item">
+                    <div class="icon">📞</div>
+                    <h3>2. Dukungan Pelanggan 24/7</h3>
+                    <p>Tim ahli kami selalu siap membantu Anda kapan saja selama perjalanan Anda.</p>
+                </div>
+                <div class="benefit-item">
+                    <div class="icon">🌎</div>
+                    <h3>3. Jaringan Mitra Global</h3>
+                    <p>Akses ke berbagai destinasi eksklusif di seluruh dunia dengan harga terbaik melalui kemitraan global kami.</p>
+                </div>
+            </div>
+        </section>              
+        
+        <section class="our-package">
+            <header>
+                <h2>Pilihan Paket Kami</h2>
+            </header>
+            <div class="package-grid">
+                <div class="package-item">
+                    <span class="icon">🌴</span>
+                    <h3>Bali</h3>
+                    <p>Eksplorasi keindahan alam dan budaya Bali, termasuk wisata kuliner dan cagar budaya terbaik.</p>
+                </div>
+                <div class="package-item">
+                    <span class="icon">🗾</span>
+                    <h3>Jepang</h3>
+                    <p>Kunjungi negeri matahari terbit dengan perjalanan yang dirancang khusus untuk Anda.</p>
+                </div>
+                <div class="package-item">
+                    <span class="icon">🦁</span>
+                    <h3>Singapura</h3>
+                    <p>Liburan mewah dan pengalaman seru di kota modern Asia Tenggara.</p>
+                </div>
+                <div class="package-item">
+                    <span class="icon">🏔</span>
+                    <h3>Bandung</h3>
+                    <p>Jelajahi keindahan alam pegunungan dan surga belanja di kota kembang.</p>
+                </div>
+                <div class="package-item">
+                    <span class="icon">🌊</span>
+                    <h3>Surabaya</h3>
+                    <p>Rasakan harmoni budaya dan tempat wisata modern di kota pahlawan.</p>
+                </div>
+                <div class="package-item">
+                    <span class="icon">✈️</span>
+                    <h3>Custom Travel</h3>
+                    <p>Buat rencana perjalanan yang sepenuhnya disesuaikan dengan kebutuhan Anda.</p>
+                </div>
+            </div>
+        </section>        
+        
+        <section class="closing-argument">
+            <header>
+                <h2>TravelokaIndah: Mewujudkan Impian Perjalanan Anda</h2>
+            </header>
+            <p>
+                Bersama kami, liburan Anda bukan hanya perjalanan biasa, tapi sebuah pengalaman yang tak terlupakan. 
+                Biarkan tim profesional kami membantu Anda menjelajahi dunia dengan nyaman dan aman.
+            </p>
+            <button class="cta-button">Hubungi Kami Sekarang</button>
+        </section>
+        <footer class="footer">
+            <div>
+                <p>Syarat & Ketentuan | Kebijakan Privasi</p>
+                <p>&copy; 2024 TravelokaIndah. Semua Hak Dilindungi.</p>
+            </div>
+        </footer>     
+    </main>
+    <script src="js/script.js"></script>
+</body>
+</html>
